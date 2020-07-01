@@ -60,6 +60,6 @@ Arguments:	/computers:[COMPUTERSFILEPATH]
 
 			/mode:[DISCOVER|IMPLEMENT]
 
-Requires:	Executor system OS WIndows XP Professional of above
-			Executor account has "Administrators" level access to target
-				computers
+Requires:	Executor system OS WIndows XP Professional or above
+		Executor account has "Administrators" level access to target
+			computers
