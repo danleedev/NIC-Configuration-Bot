@@ -10,7 +10,7 @@ environment, providing a configuration file for specifying desired settings
 by NIC type, and then applying those configuration specifications back to the
 environment.  The script should be used in three (3) phases.
 
-Phase 1: Discovery
+Phase 1: Discovery - 
 When run with "/mode:discover", this script will save to the XML file
 specified in "/nics:[NICSFILEPATH]" the full set of driver configuration
 options for every make and model of active network adapter found in the list
@@ -20,7 +20,7 @@ root node is not "<nics>", the script will create a new XML structure and
 replace the file.  Each NIC make and model will only be written to the XML
 once, keying on NIC description as found in target computer registries.
 
-Phase 2: Design
+Phase 2: Design - 
 In "Phase 1", the script inserts an attribute called "push" into each
 "<param>" tag of the generated XML.  This attribute allows users to specify
 a value for each parameter and NIC.  Users must pay attention to the other
@@ -34,7 +34,7 @@ have a specific set of valid values they can be set to.  In these cases, a
 children.  These will guide users on what values may be used to "push"
 to an "enum" type "<param>" and what those values mean.
 
-Phase 3:  Implement
+Phase 3:  Implement - 
 Once the XML has been updated with the desired "push" values for each
 "<nic>" and "<param>", the script can be run with "/mode:implement" to apply
 the values specified in "/nics:[NICSFILEPATH]" to the list of computers in
